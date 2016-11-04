@@ -8,14 +8,15 @@ import java.util.List;
  */
 public class BPMN {
 
-    List<Sequence_Flow> sfl = new ArrayList<Sequence_Flow>();
+    public List<Sequence_Flow> sfl = new ArrayList<Sequence_Flow>();
 
 
-    void getStartEvent() {
+    public Event getStartEvent() {
         Event obn = new Event(true);
+        return obn;
     }
 
-    List<Sequence_Flow> getFlows() {
+    public List<Sequence_Flow> getFlows() {
         return this.sfl;
     }
 }
